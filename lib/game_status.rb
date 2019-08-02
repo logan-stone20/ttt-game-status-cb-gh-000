@@ -16,6 +16,9 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
+  if board.nil? == false
+    return false
+  end
   WIN_COMBINATIONS.each do |combination|
     win_index_1 = combination[0]
     win_index_2 = combination[1]
