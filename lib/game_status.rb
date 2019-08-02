@@ -21,11 +21,11 @@ def won?(board)
     win_index_2 = combination[1]
     win_index_3 = combination[3]
     if board[win_index_1] == "X" && board[win_index_2] == "X" && board[win_index_3] == "X"
-      return combination
+      combination
     elsif board[win_index_1] == "O" && board[win_index_2] == "O" && board[win_index_3] == "O"
-      return combination
+      combination
     else
-      return false
+      false
     end
   end
 end
