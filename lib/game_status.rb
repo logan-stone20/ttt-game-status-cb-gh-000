@@ -27,7 +27,8 @@ def won?(board)
       return combination
     elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
       return combination
+    else
+      return false
     end
-    false
   end
 end
